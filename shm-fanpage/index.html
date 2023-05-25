@@ -1,107 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Fanpage - SHM</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" type="image/x-icon" href="imgs/shm_favicon.png">
+       
         <style>
-
-            html {
-                height: 100%;
-                width: 100%;
-            }
-
-            body {
-                height: 100%;
-            }
-
-            .menuLink {
-                color: white;
-            }
-            .menuLink:hover {
-                color: rgb(130, 130, 130);
-            }
-            #aboutHeader {
-                    font-family: 'Trebuchet MS';
-                    font-size: 40px;
-                    margin-top: 7%;
-                    margin-left: 25%;
-            }
-            #aboutText {
+            
+            
+            #aboutHeader, #aboutText {
                 font-family: 'Trebuchet MS';
-                font-size: 20;
+                max-width: 26%;
                 text-align: center;
-                max-width: 300px;
-                margin-left: 17%;
-            }
-            .verticalLine {
-                transform: rotate(90deg);
-                max-width: 10%;
-                margin-top: 60px;
-                margin-bottom:0px;
-
-            }
-            .main{
-                width:100%;
-            }
-            .mainleft{
-                position: absolute;
-                width:49%;
-            }
-            .mainmiddle{
-                width: 4%;
-                border-left: 2px solid white;
-                height: 300px;
-                display: block;
-                margin-left: 932px;
-                margin-right: auto;
-                margin-bottom: 5px;
-                position: relative;
-
-            }
-            .mainright{
-                position: absolute;
-                right: 260px;
-                z-index: 50;
-                bottom: 330px;
-            }
-
-
-            #axwellImg {
-                position: absolute;
-                left: 180px;
-                top: 920px;
-            }
-
-            #ingrossoImg {
-                position: absolute;
-                left: 850px;
-                top: 915px;
+                margin-left: 10%;
+                margin-top: 3%;
             }
             
-            #steveAngelloImg {
+            .memberImg {
+                display: inline-block;
                 position: absolute;
-                left: 1490px;
-                top: 913px;
+                left: 62%;
+                bottom: 12%;
             }
-
-            #axwellFact {
-                position: absolute;
-                top: 1110px;
-                max-width: 140px;
-                left: 195px;
-                text-align: center;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+            .membersList {
+                font-family: 'Trebuchet MS';
+                font-size: 30px;
             }
-
-            #ingrossoFact {
-                position: absolute;
-                top: 1110px;
-                max-width: 140px;
-                left: 195px;
-                text-align: center;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-
         </style>
     </head>
 
@@ -119,11 +42,9 @@
                     </div>
                 </div>
             </div>
-            <div class="mainmiddle">
-            </div>
-        <div class="mainright">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Swedish_house_mafia_2.jpg/450px-Swedish_house_mafia_2.jpg" alt="A image of Swedish House Mafia members" height="200" width="300">
-            <p style="text-align: center; font-family: 'Trebuchet MS'; font-size: large; font-style: italic;">A image of the trio</p>
+        <div>
+            <img  class="memberImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Swedish_house_mafia_2.jpg/450px-Swedish_house_mafia_2.jpg" alt="A image of Swedish House Mafia members" height="200" width="300">
+            <p style="position: absolute; left: 68%; font-family: 'Trebuchet MS'; bottom: 4%;">A image of the trio</p>
         </div>
             
        </div>
@@ -132,14 +53,11 @@
         <div> 
             <h1 style="text-align: center; font-size: 60px; font-family: 'Trebuchet MS';">Members</h1>
             <br>
-            <h2 style="position: absolute; left: 12%; font-family: 'Trebuchet MS'; font-size: 30px;">Axwell</h2>
-            <img id="axwellImg" src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-217643-AP_795730794639__.jpg" width="180px" height="180px">
-            <p id="axwellFact">Axwell is the oldest of the trio and is 45 years old</p>
-            <h2 style="position: absolute; left: 47.5%; font-family: 'Trebuchet MS'; font-size: 30px;">Ingrosso</h2>
-            <img id="ingrossoImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr33CGQdLAlJjTgrziPWREOOCqA024Z3eagZTQDXr25gqW-_Cx-1D086uJbasPbP4AZqM&usqp=CAU" width="180px" height="180px">
-            <p id="ingrossoFact"></p>
-            <h2 style="position: absolute; left: 80%; font-family: 'Trebuchet MS'; font-size: 30px;">Steve Angello</h2>
-            <img id="steveAngelloImg" src="https://yt3.googleusercontent.com/ytc/AGIKgqM25_7PIpIBF7XSUvanzCJfEoy2Dn4VnAV3L2-iOw=s900-c-k-c0x00ffffff-no-rj" width="185px" height="185px">
+            <ul class="membersList">
+                <li style="display:inline-block;">Axwell</li>
+                <li style="display:inline-block; position: absolute; left: 45.5%">Ingrosso</li>
+                <li style="display:inline-block; float: right;">Steve Angello</li>
+            </ul>
         </div>
     
     </body>
