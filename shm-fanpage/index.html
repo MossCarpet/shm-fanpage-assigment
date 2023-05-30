@@ -5,26 +5,91 @@
        
         <style>
             
+            html {
+                width: 100%;
+                height: 120%;
+            }
+            
             
             #aboutHeader, #aboutText {
                 font-family: 'Trebuchet MS';
-                max-width: 26%;
+                max-width: 20%;
                 text-align: center;
-                margin-left: 10%;
+                margin-left: 14%;
                 margin-top: 3%;
             }
             
             .memberImg {
-                display: inline-block;
-                position: absolute;
-                left: 62%;
-                bottom: 12%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
             
             .membersList {
                 font-family: 'Trebuchet MS';
                 font-size: 30px;
             }
+            
+            #endingHr {
+                margin-top: 5%;
+            }
+            
+            #axwellImg {
+                height: 170px;
+                width: 170px;
+                position: absolute;
+                left: 16.5%;
+                bottom: -8%;
+                
+            }
+            
+            #ingrossoImg {
+                height: 170px;
+                width: 170px;
+                position: absolute;
+                left: 45.5%;
+                bottom: -8%;
+            
+            }
+            
+            
+            #steveAngelloImg {
+                height: 170px;
+                width: 170px;
+                position: absolute;
+                left: 78%;
+                bottom: -12%;
+                
+            }
+            
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Trebuchet MS";
+                position: relative;
+            }
+            
+            a::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 100%;
+                height: 2px;
+                bottom: -3px;
+                left: 0;
+                background-color: white;
+                transform: scaleX(0);
+                transition: transform 0.3s ease;
+            }
+            
+            a:hover {
+    color: #d9d9d9;
+}
+
+
+a:hover::before {
+    transform: scaleX(1);
+}
         </style>
     </head>
 
@@ -32,31 +97,30 @@
         <img src="imgs/shm-logo.png" style="width: 340px;height: 180px; display: block; margin-left: auto; margin-right: auto; margin-top: 30px; cursor:pointer; user-select: none;">
         <h1 style="text-align: center; font-family: 'Trebuchet MS';">Fanpage</h1>
         <br>
-        <hr>
+        <br>
+        <br>
         <div class="main">
-            <div class="mainleft">
-                <div class="about">
-                    <h1 id="aboutHeader">About SHM</h1>
-                    <div id="aboutText">
-                        <p>Swedish House Mafia is a Swedish electronic dance music trio formed in late 2008 and have been regarded as some of the greatest DJ's in the world and have repeatedly featured in the top 10 of many DJ lists. The trio is well known for their song "Don't You Worry Child" which released in 2012. </p>
-                    </div>
-                </div>
-            </div>
         <div>
             <img  class="memberImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Swedish_house_mafia_2.jpg/450px-Swedish_house_mafia_2.jpg" alt="A image of Swedish House Mafia members" height="200" width="300">
-            <p style="position: absolute; left: 68%; font-family: 'Trebuchet MS'; bottom: 4%;">A image of the trio</p>
+            <p style="font-family: 'Trebuchet MS'; text-align: center;">A image of the trio</p>
         </div>
             
        </div>
-        <hr>
+        <hr id="endingHr">
 
         <div> 
             <h1 style="text-align: center; font-size: 60px; font-family: 'Trebuchet MS';">Members</h1>
             <br>
             <ul class="membersList">
-                <li style="display:inline-block;">Axwell</li>
-                <li style="display:inline-block; position: absolute; left: 45.5%">Ingrosso</li>
-                <li style="display:inline-block; float: right;">Steve Angello</li>
+                <li style="display:inline-block; margin-left: 16%;">Axwell</li>
+                <li style="display:inline-block; position: absolute; left: 47%">Ingrosso</li>
+                <li style="display:inline-block; float: right; margin-right: 13%;">Steve Angello</li>
+            </ul>
+            
+            <ul>
+                <li style="display:inline-block; margin-left: 11%; font-size: 16px;"><a target="_blank" rel="nofollow" href="https://en.wikipedia.org/wiki/Axwell">He is the oldest of the group (45 y/o)</a></li>
+                <li style="position: absolute; display:inline-block; margin-left: 7%;"><a target="_blank" rel="nofollow" href="https://en.wikipedia.org/wiki/Sebastian_Ingrosso">Even though he grew up in Stockholm, Sweden, Ingrosso is of tunisian heritage</a></li>
+                <li style="display:inline-block; position: absolute; margin-left: 43%;"><a target="_blank" rel="nofollow" href="https://genius.com/artists/Steve-angello/q/start-making-music#:~:text=Steve%20Angello%20released%20their%20first,%E2%80%9D%20on%20April%206%2C%202003.">Steve released his first song in 2003 called "Young As Funk"</a></li>
             </ul>
         </div>
     
